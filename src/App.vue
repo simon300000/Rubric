@@ -12,6 +12,7 @@
         <router-link class="nav-item nav-link" to="/">HelloWorld</router-link>
         <router-link class="nav-item nav-link" to="/home">Home</router-link>
         <router-link class="nav-item nav-link" to="/rubric">Rubric</router-link>
+        <router-link class="nav-item nav-link" to="/test">TEST</router-link>
       </div>
     </div>
   </nav>
@@ -50,10 +51,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-}
-
-.router {
-  padding-bottom: 5px;
 }
 
 .fade-enter-active,

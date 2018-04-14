@@ -1,38 +1,31 @@
 <template>
   <div class="rubric">
-    <p>text</p>
-
-    <!-- <div v-for="base in bases" v-bind:key="base.title" id="base">
-
+    <div v-for="base in bases" v-bind:key="base.title" id="base">
       <h1>{{base.title}}</h1>
-
       <div v-for="row in base.rows" v-bind:key="row.heading" id="row">
-
         <h3>{{row.heading}}</h3>
-
         <div class="grid_base">
           <div v-for="item in row.items" v-bind:key="item.content" id="item">
             <div class="base">
               <div class="base_radio">
-                <input type="radio" :id="'radio' + base.position + '_' + row.position + '_' + item.position" :name="'item' + base.position + '_' + row.position" :value="item.position" required="">
-                <label :for="'radio' + base.position + '_' + row.position + '_' + item.position">
+                <input type="radio" :id="'radio' + base.index + '_' + row.index + '_' + item.index" :name="'item' + base.index + '_' + row.index" :value="item.index" required="">
+                <label :for="'radio' + base.index + '_' + row.index + '_' + item.index">
                   {{item.content}}
                 </label>
               </div>
             </div>
           </div>
         </div>
-
       </div>
-    </div> -->
+    </div>
   </div>
 </template>
 
 <script>
-import rubric from './rubric'
+import rubric from './list'
 
 export default {
-  name: 'bases',
+  name: 'rubric',
   data() {
     return {
       bases: rubric
@@ -41,7 +34,7 @@ export default {
 }
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-/* <style scoped>
+<style scoped>
 .base_radio input[type="radio"] {
   display: none;
 }
@@ -112,4 +105,4 @@ export default {
     width: 177.5px;
   }
 }
-</style> */
+</style>
