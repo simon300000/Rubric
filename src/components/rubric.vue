@@ -9,7 +9,7 @@
         <a class="nav-item nav-link" id="pills-Curriculum-tab" data-toggle="pill" href="#pills-Curriculum" role="tab" aria-controls="pills-Curriculum" aria-selected="false">Curriculum</a>
       </div>
     </nav>
-    <br>
+    <hr>
     <div class="tab-content" id="pills-tabContent">
       <div class="tab-pane fade show active" id="pills-Instruction" role="tabpanel" aria-labelledby="pills-Instruction-tab">
         <div v-for="base in bases" v-if="base.index === 1">
@@ -92,6 +92,9 @@
         </div>
       </div>
     </div>
+
+
+
   </div>
 </template>
 
