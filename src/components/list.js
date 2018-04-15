@@ -1,7 +1,7 @@
 module.exports = [{
   // Rubic 1
   index: 1,
-  title: '1. Instruction',
+  title: 'Instruction',
   rows: [{
     index: 1,
     heading: 'Instructional Strategies',
@@ -86,7 +86,7 @@ module.exports = [{
 }, {
   // Rubic 2
   index: 2,
-  title: '2. Discourse',
+  title: 'Discourse',
   rows: [{
     index: 1,
     heading: 'Questioning Level',
@@ -171,7 +171,7 @@ module.exports = [{
 }, {
   // Rubic 3
   index: 3,
-  title: '3. Assesment',
+  title: 'Assesment',
   rows: [{
     index: 1,
     heading: 'Prior Knowledge',
@@ -256,7 +256,7 @@ module.exports = [{
 }, {
   // Rubic 4
   index: 4,
-  title: '4. Curriculum',
+  title: 'Curriculum',
   rows: [{
     index: 1,
     heading: 'Content Depth',

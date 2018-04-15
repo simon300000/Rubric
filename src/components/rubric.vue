@@ -1,17 +1,91 @@
 <template>
   <div class="rubric">
-    <div v-for="base in bases" v-bind:key="base.title" id="base">
-      <h1>{{base.title}}</h1>
-      <div v-for="row in base.rows" v-bind:key="row.heading" id="row">
-        <h3>{{row.heading}}</h3>
-        <div class="grid_base">
-          <div v-for="item in row.items" v-bind:key="item.content" id="item">
-            <div class="base">
-              <div class="base_radio">
-                <input type="radio" :id="'radio' + base.index + '_' + row.index + '_' + item.index" :name="'item' + base.index + '_' + row.index" :value="item.index" required="">
-                <label :for="'radio' + base.index + '_' + row.index + '_' + item.index">
-                  {{item.content}}
-                </label>
+
+    <nav>
+      <div class="nav nav-pills" id="pills-tab" role="tablist">
+        <a class="nav-item nav-link active" id="pills-Instruction-tab" data-toggle="pill" href="#pills-Instruction" role="tab" aria-controls="pills-Instruction" aria-selected="true">Instruction</a>
+        <a class="nav-item nav-link" id="pills-Discourse-tab" data-toggle="pill" href="#pills-Discourse" role="tab" aria-controls="pills-Discourse" aria-selected="false">Discourse</a>
+        <a class="nav-item nav-link" id="pills-Assesment-tab" data-toggle="pill" href="#pills-Assesment" role="tab" aria-controls="pills-Assesment" aria-selected="false">Assesment</a>
+        <a class="nav-item nav-link" id="pills-Curriculum-tab" data-toggle="pill" href="#pills-Curriculum" role="tab" aria-controls="pills-Curriculum" aria-selected="false">Curriculum</a>
+      </div>
+    </nav>
+    <br>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-Instruction" role="tabpanel" aria-labelledby="pills-Instruction-tab">
+        <div v-for="base in bases" v-if="base.index === 1">
+          <h2>{{base.title}}</h2>
+          <div v-for="row in base.rows" v-bind:key="row.heading" id="row">
+            <h5>{{row.heading}}</h5>
+            <div class="grid_base">
+              <div v-for="item in row.items" v-bind:key="item.content" id="item">
+                <div class="base">
+                  <div class="base_radio">
+                    <input type="radio" :id="'radio' + base.index + '_' + row.index + '_' + item.index" :name="'item' + base.index + '_' + row.index" :value="item.index" required="">
+                    <label :for="'radio' + base.index + '_' + row.index + '_' + item.index">
+                      {{item.content}}
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-Discourse" role="tabpanel" aria-labelledby="pills-Discourse-tab">
+        <div v-for="base in bases" v-if="base.index === 2">
+          <h2>{{base.title}}</h2>
+          <div v-for="row in base.rows" v-bind:key="row.heading" id="row">
+            <h5>{{row.heading}}</h5>
+            <div class="grid_base">
+              <div v-for="item in row.items" v-bind:key="item.content" id="item">
+                <div class="base">
+                  <div class="base_radio">
+                    <input type="radio" :id="'radio' + base.index + '_' + row.index + '_' + item.index" :name="'item' + base.index + '_' + row.index" :value="item.index" required="">
+                    <label :for="'radio' + base.index + '_' + row.index + '_' + item.index">
+                      {{item.content}}
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-Assesment" role="tabpanel" aria-labelledby="pills-Assesment-tab">
+        <div v-for="base in bases" v-if="base.index === 3">
+          <h2>{{base.title}}</h2>
+          <div v-for="row in base.rows" v-bind:key="row.heading" id="row">
+            <h5>{{row.heading}}</h5>
+            <div class="grid_base">
+              <div v-for="item in row.items" v-bind:key="item.content" id="item">
+                <div class="base">
+                  <div class="base_radio">
+                    <input type="radio" :id="'radio' + base.index + '_' + row.index + '_' + item.index" :name="'item' + base.index + '_' + row.index" :value="item.index" required="">
+                    <label :for="'radio' + base.index + '_' + row.index + '_' + item.index">
+                      {{item.content}}
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-Curriculum" role="tabpanel" aria-labelledby="pills-Curriculum-tab">
+        <div v-for="base in bases" v-if="base.index === 4">
+          <h2>{{base.title}}</h2>
+          <div v-for="row in base.rows" v-bind:key="row.heading" id="row">
+            <h5>{{row.heading}}</h5>
+            <div class="grid_base">
+              <div v-for="item in row.items" v-bind:key="item.content" id="item">
+                <div class="base">
+                  <div class="base_radio">
+                    <input type="radio" :id="'radio' + base.index + '_' + row.index + '_' + item.index" :name="'item' + base.index + '_' + row.index" :value="item.index" required="">
+                    <label :for="'radio' + base.index + '_' + row.index + '_' + item.index">
+                      {{item.content}}
+                    </label>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

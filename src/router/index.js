@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import home from '@/components/home'
 import rubric from '@/components/rubric'
-// import test from '@/components/test'
+import test from '@/components/test'
 
 Vue.use(Router)
 
@@ -21,6 +21,10 @@ export default new Router({
       path: '/rubric',
       name: 'rubric',
       component: rubric
+    }, {
+      path: '/test',
+      name: 'test',
+      component: test
     }
   ],
   linkExactActiveClass: 'active'
