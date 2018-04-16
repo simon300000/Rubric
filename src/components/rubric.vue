@@ -1,6 +1,17 @@
 <template>
   <div class="rubric">
-
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">Teacher</label>
+      </div>
+      <select class="custom-select" name="submitter" id="inputGroupSelect01" required="">
+        <option selected>Choose...</option>
+        <option value="1">Julie Terry</option>
+        <option value="2">Karl Suits</option>
+        <option value="3">Robert Hyndman</option>
+      </select>
+    </div>
+    <hr>
     <nav>
       <div class="nav nav-pills" id="pills-tab" role="tablist">
         <a class="nav-item nav-link active" id="pills-Instruction-tab" data-toggle="pill" href="#pills-Instruction" role="tab" aria-controls="pills-Instruction" aria-selected="true">Instruction</a>
@@ -99,7 +110,7 @@
 </template>
 
 <script>
-import rubric from './list'
+import rubric from './list-rubric'
 
 export default {
   name: 'rubric',

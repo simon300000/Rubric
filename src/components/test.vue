@@ -37,11 +37,14 @@
       <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">Curriculum</div>
     </div>
 
+    <br><br><br>
+    <p id="demo"></p>
+
   </div>
 </template>
 
 <script>
-import test from './list'
+import test from './list-rubric'
 
 export default {
   name: 'test',
@@ -53,21 +56,6 @@ export default {
 }
 
 
-// function empty(){
-//   $('input[type="text"], select').bind('keyup change',function(){
-//
-//     // get elements that are empty.
-//     var empty = $('input[type="text"], select').map(function(index, el) {
-//         return !$(el).val().length ? el : null;
-//     }).get();
-//
-//     // could also be placed outside of the function
-//     var number = $('#number');
-//
-//     // check if there are any empty elements, if there are none, show numbers, else hide number.
-//     !empty.length ? number.show() : number.hide();
-// });
-// }
 
 
 </script>
