@@ -38,7 +38,6 @@
     </div>
 
     <br><br><br>
-    <p id="demo"></p>
 
   </div>
 </template>

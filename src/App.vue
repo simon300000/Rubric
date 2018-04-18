@@ -12,8 +12,8 @@
         <router-link class="nav-item nav-link" to="/">HelloWorld</router-link>
         <router-link class="nav-item nav-link" to="/home">Home</router-link>
         <router-link class="nav-item nav-link" to="/rubric">Rubric</router-link>
-        <router-link class="nav-item nav-link" to="/view">View</router-link>
-        <router-link class="nav-item nav-link" to="/test">TEST</router-link>
+        <router-link class="nav-item nav-link" to="/view" id="nav">View</router-link>
+        <router-link class="nav-item nav-link" to="/test" id="nav">TEST</router-link>
       </div>
     </div>
   </nav>
