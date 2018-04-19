@@ -1,4 +1,4 @@
-# rubric
+# Rubric
 
 > A Vue.js project
 
